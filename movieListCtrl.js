@@ -3,6 +3,7 @@ function MovieListCtrl(movieService, $location) {
   this.movieList = movieService.getMovies();
   this.$location = $location;
 
+
   this.sortOptions = [
     {label: 'Title', sortField: 'Title', reverse: false},
     {label: 'Rating', sortField: "imdbRating", reverse: true}
@@ -18,5 +19,7 @@ MovieListCtrl.prototype.crick = function (arr){
 	this.$location.path('/movie/:movie' + arr);
 
 }
+
+
 
 angular.module('coderMdb').controller('MovieListCtrl',  MovieListCtrl);
