@@ -1,12 +1,41 @@
 <div id="movie-details">
-  <h1 class="text-center">{{ctrl.title}}</h1>
+  <h1 class="text-center"> {{ctrl.Title}}</h1>
   <div class="row">
     <div class="col-xs-5">
+    <img class="media-object movie-poster" src = "{{ctrl.Poster}}">    
       <!--TODO #4: Show the movie poster image here-->
       <img class="movie-poster">
     </div>
     <div class="col-xs-7">
       <table class="table">
+        <tr>
+          <td>Plot</td>
+          <td>{{ctrl.Plot}}</td>
+        </tr>
+        <tr>
+          <td>Rated</td>
+          <td>{{ctrl.Rated}}</td>
+        </tr>
+        <tr>
+          <td>Released</td>
+          <td>{{ctrl.Released}}</td>
+        </tr>
+        <tr>
+          <td>Runtime</td>
+          <td>{{ctrl.Runtime}}</td>
+        </tr>
+        <tr>
+          <td>Genre</td>
+          <td>{{ctrl.Genre}}</td>
+        </tr>
+        <tr>
+          <td>Actors</td>
+          <td>{{ctrl.Actors}}</td>
+        </tr>
+        <tr>
+          <td>IMDB Rating</td>
+          <td>{{ctrl.imdbRating}}</td>
+        </tr>
         <!--TODO #4: Show all the fields from the movie object in this table-->
       </table>
     </div>    
@@ -14,7 +43,7 @@
   <div class="row">
     <div class=buttons>
       <!--TODO #4: Make this button take you back to the home page-->
-      <a class="btn btn-primary">Back</a>
+      <a class="btn btn-primary" href="/#/home">Back</a>
     </div>
   </div>
 </div>

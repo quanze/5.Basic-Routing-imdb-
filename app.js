@@ -9,7 +9,7 @@ app.config(function($routeProvider) {
   })
   .when('/movie/:movieId',{
   	templateUrl: "movieDetails.html",
-  	controller: 'movieDetailsCtrl as ctrl'
+  	controller: 'MovieDetailsCtrl as ctrl'
   })
   .otherwise({
   	redirectTo: '/home'
